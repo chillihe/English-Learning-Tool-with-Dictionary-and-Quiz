@@ -1,0 +1,7 @@
+__pycache__
+build
+dist
+data.json
+DataBase.py 
+learned_words.db 
+PageController.spec
