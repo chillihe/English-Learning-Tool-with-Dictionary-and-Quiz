@@ -1,4 +1,8 @@
 from tkinter import *
+from StartPage import StartPage
+from DictionaryPage import DictionaryPage
+from QuizPage import QuizPage
+import Backend
 
 class SeaofBTCapp(Tk):
 
@@ -14,13 +18,14 @@ class SeaofBTCapp(Tk):
 
         self.frames = {}
 
-        for F in (StartPage, PageOne, PageTwo):
+        for F in (StartPage, DictionaryPage, QuizPage):
+            button_dict = {StartPage : (DictionaryPage, QuizPage), 
+                           DictionaryPage : (StartPage, QuizPage), 
+                           QuizPage : (StartPage, DictionaryPage)}
 
-            frame = F(container, self)
-
+            frame = F(container, self, button_dict[F][0], button_dict[F][1])
             self.frames[F] = frame
-
-            frame.grid(row=0, column=0, sticky="nsew")
+            frame.grid(row=1, column=0, sticky="nsew")
 
         self.show_frame(StartPage)
 
@@ -28,3 +33,7 @@ class SeaofBTCapp(Tk):
 
         frame = self.frames[cont]
         frame.tkraise()
+
+Backend.connect()
+app = SeaofBTCapp()
+app.mainloop()
