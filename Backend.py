@@ -1,4 +1,3 @@
-import psycopg2
 import sqlite3
 import random
 from difflib import get_close_matches
