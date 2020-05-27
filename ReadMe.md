@@ -2,7 +2,7 @@
 
 ## How Does the Program Work?
 The English learning tool is an executable program that runs on Windowns. It is a simple program that mainly has the following two functions, which can be accessed via the buttons on the start page:
-* **Dcitionary**: users can enter English word in the Entry box and click the "Search" button. The program will find the definition for the word in the attached dictionary database and display the definitions. If there is a typo, or if the exact word can not be found, the program will find similar words for the user to choose. Additionally, after the search, users can save words, view all saved words, and delete words from the saved database.
+* **Dictionary**: users can enter English word in the Entry box and click the "Search" button. The program will find the definition for the word in the attached dictionary database and display the definitions. If there is a typo, or if the exact word can not be found, the program will find similar words for the user to choose. Additionally, after the search, users can save words, view all saved words, and delete words from the saved database.
 ![Image of Search](https://github.com/chillihe/English-Learning-Tool-with-Dictionary-and-Quiz/blob/master/Image/Search.PNG)
 * **Quiz**: the program can generate random multiple-choice questions for the users on different words or definitions. Each correct answer adds one point and each incorrect answer deducts one point. Users can choose to reset the point counter. There are four types of questions:
     * *Random Learned Word*: display one random word from the word list that the user has saved and four options for definitions.
